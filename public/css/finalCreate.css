@@ -1,0 +1,31 @@
+.header {
+    text-align: center;
+    font-weight: bold;
+}
+.video video {
+    width: 300px;
+}
+.video {
+    text-align: center;
+}
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+.image-friend {
+    text-align: center;
+}
+.image-friend button {
+    padding: 10px 15px;
+    background: black;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.image-friend button a {
+    color: white;
+    text-decoration: none;
+}

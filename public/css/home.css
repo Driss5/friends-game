@@ -1,0 +1,327 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+/* Navbar */
+.navb-links ul {
+    text-align: center;
+}
+.navb-links ul li {
+    display: inline-block;
+    margin: 0 8px;
+}
+.navb-links ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    color: #273F4F;
+}
+.navb-logo p {
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    padding-top: 10px;
+    text-shadow: 2px 4px 10px red;
+    color: #273F4F;
+}
+.navbarr {
+    background-color: #FE7743;
+    padding: 10px 0;
+}
+/* Responsive Navbar */
+@media (min-width : 500px) {
+.navbarr {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navb-links ul {
+    margin-bottom: 0;
+}
+}
+/* Header */
+.header-p p {
+    margin-bottom : 0px;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 2px;
+}
+.header-img {
+    text-align: center;
+    margin-top: 10px;
+}
+.header-content {
+    width: 90%;
+    height: 300px;
+    background-color: #FE7743;
+    margin: auto;
+    border-radius: 10px;
+}
+.flesh-down, .flesh-up {
+    width: 15px;
+    height: 2px;
+    background-color: black;
+}
+.flesh-down {
+    transform: rotate(45deg);
+}
+.flesh-up {
+    transform: rotate(-45deg);
+    position: relative;
+    left: 11px;
+}
+.header-parent {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+.flesh {
+    margin-left: 33px;
+    animation: upDown 2s infinite ease-in-out;
+    cursor: pointer;
+}
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(8px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.header-cont-text p {
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+}
+.header-cont-btns button {
+    width: 85%;
+    padding: 8px 0;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-weight: bold;
+    margin: 6px;
+    background-color: white;
+}
+.header-cont-btns {
+    text-align: center;
+}
+.header-cont-text-two p {
+    text-align: center;
+    padding-top: 19px;
+    font-weight: bold;
+    font-size: large;
+}
+.header-p p span img {
+    width: 25px;
+}
+.full-bg {
+    /* background-color: aqua; */
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    height: 86vh;
+    display: flex;
+    align-items: center;
+}
+.header-cont-btns button a {
+    text-decoration: none;
+    color: black;
+}
+/* responsive Header */
+@media (min-width : 770px) {
+    .header-content {
+        width: 70%;
+    }
+    .header-img img {
+        width: 326px;
+    }
+    .test {
+        background-image: 
+        url('/images/bg-images/img-2.png'),
+        url('/images/bg-images/img-1.png');
+        background-repeat: no-repeat, no-repeat;
+        background-size: 142px, 142px;
+        background-position-x: left, right;
+        background-position-y: top, bottom;
+    }
+}
+@media (min-width : 992px) {
+    .header-content {
+        width: 50%;
+    }
+}
+@media (min-width : 1400px) {
+    .header-content {
+        width: 37%;
+    }
+    .full-bg {
+    height: 90vh;
+    }
+}
+/* How To Play */
+.howPlay {
+    background-image: url('/images/bg-images/img-3.png');
+}
+.howPlay-header {
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    padding-top: 15px;
+}
+.howP-c-header {
+    border: 2px solid;
+    width: 80%;
+    margin: auto;
+}
+.howP-c-header p {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    padding-top: 10px;
+}
+.howP-c-con p {
+    font-weight: 600;
+    padding: 15px 38px;
+}
+.how-video p {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 20px 0;
+    color: #FE7743;
+}
+.video video {
+    width: 95%;
+    padding: 30px 0;
+}
+.video {
+    text-align: center;
+}
+/* Media How To Play */
+@media (min-width: 800px) {
+    .howP-c-con p {
+        padding: 15px 47px;
+    }
+}
+@media (min-width: 900px) {
+    .howP-c-con p {
+        padding: 15px 59px;
+    }
+}
+@media (min-width: 1100px) {
+    .howPlay-content {
+        display: flex;
+    }
+    .howP-c-con p {
+        padding: 15px 20px;
+    }
+    .video video {
+        width: 765px;
+    }
+}
+@media (min-width: 1270px) {
+    .howP-c-con p {
+        padding: 15px 24px;
+    }
+}
+@media (min-width: 1500px) {
+    .howP-c-con p {
+        padding: 15px 27px;
+    }
+}
+@media (min-width: 1700px) {
+    .howP-c-con p {
+        padding: 15px 38px;
+    }
+}
+
+/* Contuct */
+.part-2 {
+    text-align: center;
+    padding: 25px 0;
+}
+.part-2 img {
+    width: 364px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px black;
+}
+.inputs input {
+    margin: 15px 10px;
+    width: 95%;
+}
+.inputs textarea {
+    margin: 15px 10px;
+    width: 95%;
+}
+.part-1-header p {
+    font-weight: bold;
+    font-size: xxx-large;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 0 15px;
+}
+.part-1-def p {
+    font-weight: bold;
+    font-size: large;
+    padding: 15px;
+}
+.btn button {
+    padding: 10px 15px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+.contuct {
+    background-color: aliceblue;
+}
+/* Media Contuct */
+@media (min-width: 560px) {
+    .part-2 img {
+        width: 520px;
+}
+}
+@media (min-width:1100px) {
+    .contuct {
+        display: flex;
+        justify-content: center;
+        gap: 27px;
+        padding: 50px 0;
+    }
+}
+@media (min-width:680px) and (max-width:1100px) {
+    .video video {
+    width: 530px;
+}
+}
+@media (min-width: 1550px) {
+    .video video {
+    width: 910px;
+}
+}
+@media (min-width: 680px) {
+    .howP-c-con {
+        margin: auto;
+        width: 91%;
+}
+
+}
+/* Footer */
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+html {
+  scroll-behavior: smooth;
+}
