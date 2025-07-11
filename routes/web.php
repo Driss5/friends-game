@@ -2,10 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CreateQuizController;
-use App\Http\Controllers\JoinQuizController;
+// use App\Http\Controllers\JoinQuizController;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\ScoreController;
 use App\Http\Controllers\ContactController;
+use App\Livewire\QuestionList;
 
 Route::get('/', function () {
     return view('home.home');
@@ -23,7 +24,7 @@ Route::get('/joinQ', function () {
 })->name('joinQ');
 
 Route::post('createQuiz', [CreateQuizController::class, 'create'])->name('createQuiz');
-Route::post('joinQuiz', [JoinQuizController::class, 'join'])->name('joinQuiz');
+// Route::post('joinQuiz', [JoinQuizController::class, 'join'])->name('joinQuiz');
 
 Route::get('joinQuiz', function () {
     return view('createAndJoin.joinQuiz');
@@ -49,7 +50,6 @@ Route::get('/questions', function () {
 
 Route::post('/join', [QuestionController::class, 'join'])->name('joinQuiz');
 
-use App\Livewire\QuestionList;
 Route::get('/quiz/{code}', function ($code) {
     return view('components.layouts.app', compact('code'));
 })->name('quizPage');

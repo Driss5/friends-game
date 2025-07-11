@@ -10,8 +10,6 @@
     <title>Join</title>
 </head>
 <body>
-
-    {{-- @livewire('question-list') --}}
     @livewire('question-list', ['code' => request()->route('code')])
         
     @livewireScripts

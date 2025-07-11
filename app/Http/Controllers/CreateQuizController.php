@@ -9,18 +9,18 @@ class CreateQuizController extends Controller
 {
     public function create(Request $request) {
         $request->validate([
-            'name' => 'required|alpha|min:3|max:7',
+            'name' => 'required|alpha|min:3|max:10',
             'code' => 'required|min:6|max:6|unique:code_quizzes,codeQ',
         ], [
-            'name.required' => 'iwa dir ghi smytk b3da',
-            'name.alpha' => 'bla ar9am',
-            'name.min' => 'khass ykon ktar mn 3',
-            'name.max' => 'khass ykon 9al mn 3',
+            'name.required' => 'Your Name Please',
+            'name.alpha' => 'Only Charachter Please',
+            'name.min' => 'Minimun 3 char',
+            'name.max' => 'maximum 10 char',
 
-            'code.required' => 'bach baghi tl3ab',
-            'code.min' => 'khass ykon 6 a noss a taman', 
-            'code.max' => 'khass ykon 6 a noss a taman',
-            'code.unique' => 'awdi had lcode kayn smhna'
+            'code.required' => 'Enter Code Please',
+            'code.min' => 'Minim 6 char', 
+            'code.max' => 'Max 6 char',
+            'code.unique' => 'This Code Already Exist'
         ]);
 
         $code = strtolower($request->code);

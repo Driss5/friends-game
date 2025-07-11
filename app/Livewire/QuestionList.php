@@ -12,7 +12,6 @@ class QuestionList extends Component
     use WithPagination;
     
     public $code;
-   
     public function mount($code)
     {
         $this->code = $code;
@@ -32,9 +31,7 @@ class QuestionList extends Component
         ]);
     }
 
-
     public $counter = 1;
-
     public function goToNextPage()
     {
         $this->reset(['selectedId', 'color', 'disabled', 'correctOptionId', 'checkCustom']);
@@ -57,8 +54,7 @@ class QuestionList extends Component
 
     $option = Option::find($optionId);
 
-    // نجيب ID ديال الجواب الصحيح
-    $this->correctOptionId = Option::where('question_id', $option->question_id)
+    $this->correctOptionId = Option::where('question_id', $option->question_id) // id correct Answer
         ->where('is_correct', 1)
         ->value('id');
 
@@ -71,6 +67,4 @@ class QuestionList extends Component
         $this->checkCustom = 'custom_incorrect';
     }
 }
-
-
 }

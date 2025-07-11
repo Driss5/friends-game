@@ -22,14 +22,14 @@ class QuestionController extends Controller
             'name' => 'required|alpha|min:3|max:7',
             'code' => 'required|exists:code_quizzes,codeQ|unique:join_quizzes,codeJ'
         ], [
-            'name.required' => 'iwa dir ghi smytk b3da',
-            'name.alpha' => 'bla ar9am',
-            'name.min' => 'khass ykon ktar mn 3',
-            'name.max' => 'khass ykon 9al mn 3',
+            'name.required' => 'Your Name Please',
+            'name.alpha' => 'Only Charachter Please',
+            'name.min' => 'Minimun 3 char',
+            'name.max' => 'maximum 10 char',
 
-            'code.required' => 'bach baghi tl3ab',
-            'code.unique' => 'rak deja l3abt',
-            'code.exists' => 'awdi b7ala rak ghalt f lcode'
+            'code.required' => 'Enter Code Please',
+            'code.unique' => 'This Code Already Exist',
+            'code.exists' => 'This Code Note Exist'
         ]);
 
         $checkTrue = CodeQuiz::select('completed')->where('codeQ', $code)->first();

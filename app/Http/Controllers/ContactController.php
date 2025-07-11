@@ -13,10 +13,10 @@ class ContactController extends Controller
             'email'=>'required|email',
             'message'=>'required'
         ], [
-            'name.required' => 'Smiya sahbi !',
-            'email.required' => 'Email sahbi !',
-            'email.email' => 'Rigal l email sahbi !',
-            'message.required' => 'Message sahbi !',
+            'name.required' => 'Your Name Please !',
+            'email.required' => 'Your Email Please !',
+            'email.email' => 'Valide Email Please !',
+            'message.required' => 'Message Please !',
         ]);
 
         $contact = new Contact();
