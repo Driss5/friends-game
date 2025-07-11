@@ -3,7 +3,7 @@
         <div class="cardd">
             <div class="card-header ">
                 <div>
-                    <p>Question <span id="question">{{$counter}}/4</span></p>
+                    <p>Question <span id="question">{{$counter}}/5</span></p>
                 </div>
                 <div class="cardd-score">
                     <p>Score : <span>{{$score}}</span></p>
