@@ -39,9 +39,9 @@
             <div class="cardd-custom-mssg pt-4 ps-3">
 
                 @if ($checkCustom === 'custom_correct')
-                    <p>Message From : {{ $q->custom_correct }}</p>
+                    <p>From Your Friend: {{ $q->custom_correct }}</p>
                 @elseif ($checkCustom === 'custom_incorrect')
-                    <p>Message From : {{ $q->custom_incorrect }}</p>
+                    <p>From Your Friend: {{ $q->custom_incorrect }}</p>
                 @endif
 
             </div>
