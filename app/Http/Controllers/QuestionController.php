@@ -46,8 +46,7 @@ class QuestionController extends Controller
                 $score->save();
                 return redirect()->route('quizPage', ['code' => $code]);
             } else {
-                $error = 'Khlih ghi ykmal';
-                return redirect()->back()->with('error', 'Khlih ghi ykmal');
+                return redirect()->back()->with('error', 'Waiting Your Friend');
             }
         
     }

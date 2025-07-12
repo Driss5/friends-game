@@ -113,7 +113,7 @@
                 <p>Contact Us</p>
             </div>
             <div class="part-1-def">
-                <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                <p>Got a question, idea, or want to team up? Let’s talk – contact me below!</p>
             </div>
             <div class="part-1-content">
                 <form action="{{Route('contact')}}" method="POST">

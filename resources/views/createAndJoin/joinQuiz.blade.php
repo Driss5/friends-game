@@ -36,10 +36,9 @@
 
     @section('error-mssg') 
         @if (session('error'))
-            <div class="alert alert-danger">
-                {{ session('error') }}
-            </div>
+            <p>{{ session('error') }}</p>
         @endif
+        
         @if ($errors->has('name'))
             <p>{{$errors->first('name')}}</p>
         @elseif($errors->has('code'))
